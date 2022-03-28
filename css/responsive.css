@@ -1,0 +1,78 @@
+/* example 1 - ზომები */
+/* @media (max-width:1024px) {
+    .block {
+        width:100px;
+        background-color: red;
+    }
+}
+@media (max-width:480px) {
+    .block:nth-child(4) {
+        display: none;
+    }
+}
+@media (max-width:400px) {
+    .block:nth-child(4) {
+        display: block;
+        background-color: blue;
+    }
+} */
+
+/* example 2 - direction */
+/* @media (max-width:1024px) {
+    .wraper-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .block {
+        margin-bottom: 30px;
+    }
+} */
+
+/* example 3 - wrap */
+/* @media (max-width:999px) {
+    .block:nth-child(4) {
+        margin-top: 30px;
+    }
+}
+@media (max-width:750px) {
+    .block:nth-child(3) {
+        margin-top: 30px;
+    }
+}
+@media (max-width:500px) {
+    .block:nth-child(2) {
+        margin-top: 30px;
+    }
+    .wraper-box {
+        justify-content: center;
+    }
+} */
+
+/* example 4 - % */
+@media (max-width: 1024px) {
+    .block {
+        width:45%;
+        margin-bottom: 30px;
+    }
+    .wraper-box {
+        height: auto;
+    }
+}
+
+@media (max-width:480px) {
+    .wraper-box {
+        justify-content: center;
+    }
+    .block {
+        width:60%;
+    }
+    /* .navigation {
+        display: none;
+    } */
+    .nav-li:not(.active) {
+        display: none;
+    }
+    .burger-bar  {
+        display: block;
+    }
+}
